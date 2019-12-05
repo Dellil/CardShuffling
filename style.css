@@ -94,11 +94,11 @@ html, body, #app {
 }
 
 .shuffleSlow-move {
-    transition: all 2s;
+    /* transition: all 2s; */
 }
 
 .shuffleMedium-move {
-    transition: all 1s;
+    transition: all 1.5s;
 }
 
 .shuffleFast-move {

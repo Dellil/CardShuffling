@@ -15,6 +15,9 @@ new Vue({
     created() {
         this.displayInitialDeck();
     },
+    mounted() {
+        this.iterativeShuffle();
+    },
     methods: {
         displayInitialDeck() {
             let id = 1;
@@ -43,6 +46,11 @@ new Vue({
                 // this.cards[i] = this.cards[randomIndex];
                 // this.cards[randomIndex] = temp;
             }
+        },
+        iterativeShuffle(){
+            setInterval(() => {
+                this.shuffleDeck();
+            }, 2500);
         }
     }
 })
